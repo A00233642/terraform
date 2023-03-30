@@ -13,9 +13,9 @@ resource "aws_s3_bucket_versioning" "version1" {
 
 }
 
-data "aws_s3_bucket" "data" {
-  bucket = "taiwo-testing123"
-}
+#data "aws_s3_bucket" "data" {
+ # bucket = "taiwo-testing123"
+#}
 
 #data "aws_route53_zone" "test_zone" {
 #name         = "taiwo.com"
@@ -37,12 +37,12 @@ data "aws_s3_bucket" "data" {
 
 #}
 
-resource "aws_s3_object" "first_item" {
-  bucket = data.aws_s3_bucket.data.id
-  key    = "terraform.tf"
-  source = "terraform.tf"
+#resource "aws_s3_object" "first_item" {
+ # bucket = data.aws_s3_bucket.data.id
+  #key    = "terraform.tf"
+  #source = "terraform.tf"
 
-}
+#}
 
 #resource "aws_elb" "main" {
 #name               = "foobar-terraform-elb"
