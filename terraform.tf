@@ -17,7 +17,7 @@ terraform {
     region         = "us-east-1"
     encrypt        = true
     dynamodb_table = "tf.bby"
-    profile = "test"
+    #profile = "test"
 
 
   }
